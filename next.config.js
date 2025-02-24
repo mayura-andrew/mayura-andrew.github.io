@@ -10,6 +10,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  assetPrefix: '.',
+  basePath: process.env.NODE_ENV === 'production' ? '/mayura-andrew.github.io' : '',
+  trailingSlash: true,
 };
 
 module.exports = withNextra(nextConfig);
