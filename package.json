@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://mayuraandrew.tech/",
+  "homepage": "https://mayura-andrew.github.io/",
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",

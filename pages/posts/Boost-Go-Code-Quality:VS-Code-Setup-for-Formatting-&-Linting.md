@@ -1,6 +1,6 @@
 ---
 title: ⚡ Boost Go Code Quality VS Code Setup for Formatting & Linting🛠️
-date: 2025/1/31
+date: 2025/2/24
 description: Learn how to supercharge your Go development workflow in VS Code with essential tools like gofmt, goimports, golint, staticcheck, and gopls. This guide walks you through installation, configuration, and best practices for automating code formatting, linting, and error detection. Perfect for Go developers aiming to write clean, efficient, and maintainable code.
 tag: go, vscode, formatting, linting, gofmt, goimports, golint, staticcheck, gopls, productivity
 author: mayura andrew
