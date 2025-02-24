@@ -2,17 +2,16 @@ const withNextra = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.js',
   staticImage: true
-  // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // any configs you need
-
   images: {
     unoptimized: true,
   },
-  // ... other configurations
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/mayura-andrew.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/mayura-andrew.github.io/' : '',
 };
 
 module.exports = withNextra(nextConfig);

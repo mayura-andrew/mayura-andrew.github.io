@@ -2,8 +2,8 @@
   "private": true,
   "homepage": "https://mayura-andrew.github.io/",
   "scripts": {
-    "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
