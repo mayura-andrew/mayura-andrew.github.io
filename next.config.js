@@ -6,14 +6,16 @@ const withNextra = require('nextra')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  distDir: 'out',
-  basePath: process.env.NODE_ENV === 'production' ? '/mayura-andrew.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/mayura-andrew.github.io/' : '',
-  trailingSlash: true,
-};
+  basePath: process.env.NODE_ENV === 'production' 
+    ? process.env.NEXT_PUBLIC_BASE_PATH 
+    : '',
+  assetPrefix: process.env.NODE_ENV === 'production'
+    ? process.env.NEXT_PUBLIC_BASE_PATH
+    : '',
+}
 
-module.exports = withNextra(nextConfig);
+module.exports = nextConfig
