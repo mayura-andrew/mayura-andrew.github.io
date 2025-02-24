@@ -76,14 +76,15 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      - name: List build output
-        run: ls -la out/
+      - name: Fix permissions
+        run: |
+          chmod -R a+rx ./out
+          touch ./out/.nojekyll
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
-          name: github-pages  # Explicitly set the artifact name
+          path: ./out
 
   deploy:
     environment:
@@ -102,5 +103,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: github-pages
           timeout: 600000
