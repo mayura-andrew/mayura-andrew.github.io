@@ -1,18 +1,17 @@
 const withNextra = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.js',
-  staticImage: true
-  // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
+  staticImage: true,
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // any configs you need
-
+  output: 'export', // Add this line for static exports
   images: {
     unoptimized: true,
   },
-  // ... other configurations
+  basePath: '', // Add this if deploying to a subfolder
+  assetPrefix: '', // Add this if assets are served from a different domain
 };
 
 module.exports = withNextra(nextConfig);
