@@ -1,6 +1,6 @@
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-blog',
-  themeConfig: './theme.config.js',
+const withNextra = require("nextra")({
+  theme: "nextra-theme-blog",
+  themeConfig: "./theme.config.js",
   staticImage: true,
 });
 
@@ -12,6 +12,7 @@ const nextConfig = {
   },
   basePath: '', // Add this if deploying to a subfolder
   assetPrefix: '', // Add this if assets are served from a different domain
+ 
 };
 
 module.exports = withNextra(nextConfig);

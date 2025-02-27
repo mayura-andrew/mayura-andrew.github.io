@@ -1,10 +1,11 @@
 {
   "private": true,
-  "homepage": "https://mayuraandrew.tech/",
+  "homepage": "https://mayura-andrew.github.io/",
   "scripts": {
-    "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out",
+    "export": "next export"
   },
   "dependencies": {
     "axios": "^1.6.3",
