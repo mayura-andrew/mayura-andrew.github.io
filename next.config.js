@@ -6,13 +6,12 @@ const withNextra = require("nextra")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Add this line for static exports
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '', // Add this if deploying to a subfolder
-  assetPrefix: '', // Add this if assets are served from a different domain
- 
+  basePath: '',
+  assetPrefix: '', 
 };
 
 module.exports = withNextra(nextConfig);
