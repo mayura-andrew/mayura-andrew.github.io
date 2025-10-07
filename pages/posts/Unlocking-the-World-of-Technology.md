@@ -14,7 +14,7 @@ author: mayura andrew
 
 In the vast realm of technology, the journey of learning is both exciting and challenging. Fortunately, there are educators who generously share their knowledge to pave the way for enthusiasts and aspiring professionals. In this article, we'll explore free learning resources offered by two prominent educators—Dr. Charles R. Severance and Dr. Stephen P. Tarzia.
 
-![Free Education](public/images/education.jpg)  -#source (https://www.vecteezy.com/)
+![Free Education](/images/education.jpg)  -#source (https://www.vecteezy.com/)
 
 ---
 

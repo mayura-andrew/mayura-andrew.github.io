@@ -481,7 +481,7 @@ This approach ensures that emails are sent efficiently and concurrently while ke
 
 To monitor whether recipients open the emails sent through our API, we can implement a simple tracking mechanism using a unique link embedded in each email. When the recipient clicks this link, it will trigger our API to update the database, indicating that the email has been opened.
 
-![Tracking Email](public/images/trackemail.svg)
+![Tracking Email](/images/trackemail.svg)
 
 #### Setting Up the Tracking API Endpoint
 First, we need to define an API endpoint that will handle the tracking. This endpoint will be responsible for updating the ```recipients``` table to mark the email as opened.
