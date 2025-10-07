@@ -7,7 +7,7 @@ import Script from 'next/script';
 import { useState } from 'react';
 
 const socialMediaLinks = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mayura-alahakoon-827381201/', icon: '/images/linkedin.svg' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/andrewala', icon: '/images/linkedin.svg' },
   { name: 'GitHub', url: 'https://github.com/mayura-andrew', icon: '/images/github.svg' },
   { name: 'StackOverFlow', url: 'https://stackoverflow.com/users/18835623/mayura-andrew', icon: '/images/stackoverflow.svg'}
   // Add more social media links as needed
