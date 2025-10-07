@@ -11,9 +11,9 @@ Hello everyone,
 
 This article shares my experience as a remote volunteer software engineer at the Sustainable Education Foundation (SEF) over the past six months. When I joined SEF, I had just started my second year as a Software Engineering undergraduate at the Open University of Sri Lanka. I had theoretical knowledge and had created a few applications using different technologies like Go, ReactJS, and NodeJS. As undergraduates, we study theoretical aspects of software engineering, but practical experience is essential to gain a deeper understanding of the subject.
 
-![SteveJobs](public/images/stevejobs.svg)
+![SteveJobs](/images/stevejobs.svg)
 ##### About the Organization
-![SEF](public/images/sef.png)
+![SEF](/images/sef.png)
 
 You can learn more about SEF in the resources section at the end of this article.
 
@@ -80,4 +80,4 @@ Please check out the resources below if you're interested. See you in my next ar
 - [ScholarX Mentoring Program](https://scholarx.sefglobal.org/):  Explore the ScholarX platform and its mission to provide premium mentoring assistance.
 - [GitHub Repository](https://github.com/sef-global): Visit our GihHub repository.
 
-![The Imitation Game](public/images/The-Imitation-Game.svg)
+![The Imitation Game](/images/The-Imitation-Game.svg)

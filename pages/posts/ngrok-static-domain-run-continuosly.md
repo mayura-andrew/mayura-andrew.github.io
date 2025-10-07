@@ -90,7 +90,7 @@ You can check the status of the service with:
 ```bash
 sudo systemctl status ngrok
 ```
-![ngrok service status](public/images/ngrok/result.png)
+![ngrok service status](/images/ngrok/result.png)
 
 This should show you the ngrok output, including the URL that you can use to access your application.
 

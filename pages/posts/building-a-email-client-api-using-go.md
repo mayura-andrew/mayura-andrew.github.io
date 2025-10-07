@@ -39,7 +39,7 @@ The ScholarX platform and the email client API are structured as follows:
 - Backend API: A Node.js and TypeScript-based backend that handles user data and provides endpoints for fetching email addresses.
 - Email Sending Client API: A standalone Go application that handles the actual sending of emails using Google SMTP.
 
-![Email Client](public/images/emailapi.svg)
+![Email Client](/images/emailapi.svg)
 Figure 0: Overview of the API
 
 #### High-Level Workflow:
@@ -53,7 +53,7 @@ This architecture ensures a clear separation of concerns and leverages the stren
 
 ### 01 Why Go Lang 🐹?
 
-![GoLang](public/images/go.jpeg)
+![GoLang](/images/go.jpeg)
 Image source : https://github.com/golang/go
 #### Performance 🚀
 Go is renowned for its performance, especially in tasks involving high concurrency. This is crucial for sending bulk emails, as it requires the ability to handle many simultaneous network connections efficiently.
@@ -70,7 +70,7 @@ For more information about Go, you can refer the offical Go documentation.
 
 Let's delve into the project structure of our email client API. This structure ensures that our codebase is organized, maintainable and scalable.
 
-![Project Structure](public/images/project-structure.svg)
+![Project Structure](/images/project-structure.svg)
 
 #### Directory Breakdown
 
@@ -269,6 +269,7 @@ for i := 0; i < 10; i++ {
     go func() {
         defer wg.Done()
         for recipient := range queue {
+
             // Email sending logic
         }
     }()
@@ -280,12 +281,14 @@ Each recipient is added to the queue, and an initial status is recorded in the `
 ```go
 for _, recipient := range recipients {
     queue <- recipient
+
     statusMutex.Lock()
-    emailStatuses[recipient] = &EmailStatus{
+    emailStatus[recipient] = &EmailStatus{
         Sent:     false,
         Opened:   false,
         SentTime: time.Now(),
     }
+
     statusMutex.Unlock()
 }
 close(queue)
@@ -539,11 +542,6 @@ func (e EmailModel) UpdateEmail(id int64) error {
     return err
 }
 ```
-##### Explanation
-
-- SQL Query: The SQL query updates the ```opened``` status and ```opened_time``` in the ```recipients``` table.
-- Execution: The query is executed with the current time and the provided email ID.
-
 ##### Complete Email Sending  Process
 To integrate tracking into the email sending process, each email should include a unique link to the tracking endpoint. This link should contain the email ID as a query parameter.
 
@@ -778,5 +776,7 @@ For further learning and to explore the code, check out following resources:
 - [Google SMTP Limit ⚠️](https://support.google.com/a/answer/176600?hl=en): More about the Limitation of Google SMTP.
 - [How to setup Google SMTP 🔧](https://mailtrap.io/blog/gmail-smtp/): Detailed Guide through Gmail SMTP Setup and Configurations.
   
+##### Your contributions and feedback are welcome!😃 Feel free to fork the repository, submit pull requests, or report issues. Let's collaborate🫂 to make this project event better. Thank you for reading!
+---
 ##### Your contributions and feedback are welcome!😃 Feel free to fork the repository, submit pull requests, or report issues. Let's collaborate🫂 to make this project event better. Thank you for reading!
 ---

@@ -9,7 +9,7 @@ author: mayura andrew
 # Setting Up MySQL and phpMyAdmin in Debian with Docker
 --- 
 
-![Docker](public/images/docker.png)
+![Docker](/images/docker.png)
 
 ## Introduction 🚀
 
@@ -21,7 +21,7 @@ If you're not yet acquainted with the transformative power of Docker, check out 
 
 #### My OS
 
-![MyOS](public/images/os.png)
+![MyOS](/images/os.png)
 
 
 ### Part 1: MySQL Container Setup
