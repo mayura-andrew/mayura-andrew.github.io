@@ -3,7 +3,7 @@
   "homepage": "https://mayura-andrew.github.io/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "serve out",
     "export": "next export"
   },
