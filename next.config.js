@@ -12,6 +12,7 @@ const nextConfig = {
   },
   basePath: '',
   assetPrefix: '', 
+  turbopack: {},
 };
 
 module.exports = withNextra(nextConfig);
