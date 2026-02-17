@@ -12,6 +12,10 @@ const nextConfig = {
   },
   basePath: '',
   assetPrefix: '', 
+  // Silence Next.js 16 Turbopack error by providing an empty config
+  experimental: {
+    turbopack: {}
+  }
 };
 
 module.exports = withNextra(nextConfig);
