@@ -775,8 +775,6 @@ For further learning and to explore the code, check out following resources:
 - [About Containers🛳️](https://mayuraandrew.tech/posts/containers):  Learn more about the containers.
 - [Google SMTP Limit ⚠️](https://support.google.com/a/answer/176600?hl=en): More about the Limitation of Google SMTP.
 - [How to setup Google SMTP 🔧](https://mailtrap.io/blog/gmail-smtp/): Detailed Guide through Gmail SMTP Setup and Configurations.
-  
-##### Your contributions and feedback are welcome!😃 Feel free to fork the repository, submit pull requests, or report issues. Let's collaborate🫂 to make this project event better. Thank you for reading!
 ---
 ##### Your contributions and feedback are welcome!😃 Feel free to fork the repository, submit pull requests, or report issues. Let's collaborate🫂 to make this project event better. Thank you for reading!
 ---
